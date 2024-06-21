@@ -9,3 +9,7 @@ func (c *Commander) Help(message *tgbotapi.Message) {
 		"/list - list products")
 	c.bot.Send(msg)
 }
+
+func init() {
+	registeredCommands["help"] = (*Commander).Help
+}
