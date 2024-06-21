@@ -14,5 +14,5 @@ func (c *Commander) Default(message *tgbotapi.Message) {
 	c.bot.Send(msg)
 }
 func init() {
-	registeredCommands["help"] = (*Commander).Default
+	registeredCommands["default"] = (*Commander).Default
 }
